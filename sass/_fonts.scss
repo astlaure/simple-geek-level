@@ -1,0 +1,9 @@
+$book: 350;
+$medium: 500;
+$demi: 600;
+
+@font-face {
+  font-family: 'MaisonNeue';
+  src: url('../fonts/MaisonNeue/MaisonNeue-Book.ttf')  format('truetype');
+  font-weight: $book;
+}

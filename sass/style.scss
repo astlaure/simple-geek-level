@@ -1,0 +1,40 @@
+@import 'reset';
+@import 'vendors';
+@import 'fonts';
+
+
+$dark-grey: #605a5c;
+$banner-grey: #f4f4f4;
+$fonts-banner-grey: #e5e5e5;
+
+
+html {
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  color: $dark-grey;
+}
+
+.hero-image {
+  background-image: url(/images/quiz-geek.jpg);
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.hero-text {
+  transform: rotate(20deg);
+  position: absolute;
+  top: 20%;
+  left: 60%;
+
+  button {
+    text-align: center;
+    transform: translate(-50%, -50%);
+    color: $dark-grey;
+  }
+}
