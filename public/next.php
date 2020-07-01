@@ -12,13 +12,6 @@ if(!isset($_POST['first']) || !isset($_POST['second']) || !isset($_POST['third']
 
 session_start();
 
-$_SESSION['page']++;
-
-if ($_SESSION['page'] > 3) {
-    header('Location: results.php');
-    return;
-}
-
 $answers = [
     [
         [ 0, 10, 5 ],
@@ -40,5 +33,12 @@ $answers = [
 $_SESSION['score'] += $answers[$_SESSION['page'] - 1][0][$_POST['first'] - 1];
 $_SESSION['score'] += $answers[$_SESSION['page'] - 1][1][$_POST['second'] - 1];
 $_SESSION['score'] += $answers[$_SESSION['page'] - 1][2][$_POST['third'] - 1];
+
+$_SESSION['page']++;
+
+if ($_SESSION['page'] > 3) {
+    header('Location: results.php');
+    return;
+}
 
 header('Location: quiz.php');
