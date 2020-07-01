@@ -54,7 +54,7 @@ if ($_SESSION['page'] > 3) {
             <?php endforeach; ?>
         </div>
         <?php endforeach; ?>
-        <input type="submit" value="Next">
+        <input type="submit" value="Suivant">
     </form>
 </div>
 
